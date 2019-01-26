@@ -3,7 +3,7 @@
 # UCI HAR Dataset
 - Subject: Participants
 - activity: y_train and y_test combined. The activity data that each subject performed.
-- feautures: x_train and x_test combined. The data meeasurments for each subject.
+- feautures: x_train and x_test combined. The data measurments for each subject.
 
 # Activity Labels
 Labeled "activities" and describes the action of the subject
