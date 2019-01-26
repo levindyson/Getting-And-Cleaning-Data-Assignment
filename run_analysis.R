@@ -55,10 +55,9 @@ extractedData$Activity <- as.factor(extractedData$Activity)
 
 # Second independent tidy set
 extractedData$Subject <- as.factor(extractedData$Subject)
-tidy_data <- data.table(extractedData)
-
+extractedData <- data.table(extractedData)
 
 tidy_data <- aggregate(. ~Subject + Activity, extractedData, mean)
-tidy_data <- tidyData[order(tidyData$Subject,tidyData$Activity),]
+tidy_data <- extractedData[order(extractedData$Subject,extractedData$Activity),]
 
 write.table(tidy_data, file = "Tidy.txt", row.names = FALSE)
